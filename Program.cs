@@ -1,22 +1,16 @@
 ﻿using DesafioPOO.Models;
 
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.Clear();
-        
-        Iphone iphone1 = new Iphone("11-99999-7777", "17", "333333333333333333", 512);
-        
-        iphone1.Ligar();
-        iphone1.ReceberLigacao();
-        iphone1.InstalarAplicativo("Safari");
+Console.Clear();
 
-        Console.WriteLine();
+Iphone iphone1 = new Iphone("11-99999-7777", "17", "333333333333333333", 512);
 
-        Nokia nokia1 = new Nokia("11-99999-7777", "3200","222222222222222222", 4);
-        nokia1.Ligar();
-        nokia1.ReceberLigacao();
-        nokia1.InstalarAplicativo("Jogo da Cobrinha");
-    }
-}
+iphone1.Ligar();
+iphone1.ReceberLigacao();
+iphone1.InstalarAplicativo("Safari");
+
+Console.WriteLine();
+
+Nokia nokia1 = new Nokia("11-99999-7777", "3200","222222222222222222", 4);
+nokia1.Ligar();
+nokia1.ReceberLigacao();
+nokia1.InstalarAplicativo("Jogo da Cobrinha");
